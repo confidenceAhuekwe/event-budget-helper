@@ -1,0 +1,23 @@
+Confidence Ahuekwe Handover Note: event_summary Function
+
+Component owned: event_summary(event_name, total, status)
+
+Purpose and return value:
+The function generates a short event summary using the event name, total cost, and budget status. It returns a formatted string in the following format:
+
+"Event Name: total X naira. Budget Status."
+
+Tests run:
+
+Called the function with "NYSC POP Day", total = 23650, and status = "Within budget".
+Verified that it returns: "NYSC POP Day: total 23650 naira. Within budget."
+Checked the function's integration with event_total() and budget_status() through the supplied test code.
+
+Assumptions and unresolved issues:
+
+Assumes the event name, total cost, and budget status are supplied correctly by the calling code.
+Assumes the total is expressed in naira.
+No input validation or currency formatting is implemented.
+No unresolved functional issue was identified from the supplied code.
+
+Handover status: The function is simple and ready for integration, subject to further testing with different inputs.
